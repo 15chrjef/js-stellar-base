@@ -18,7 +18,7 @@ StellarSdk.Network.useTestNetwork();
 var secretString='secret key that corresponds to GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGSNFHEYVXM3XOJMDS674JZ';
 
 // create an Account object using locally tracked sequence number
-var an_account = new StellarSdk.Account("GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGSNFHEYVXM3XOJMDS674JZ", 46316927324160);
+var an_account = new StellarSdk.Account("GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGSNFHEYVXM3XOJMDS674JZ", "46316927324160");
 
 var transaction = new StellarSdk.TransactionBuilder(an_account)
     .addOperation(StellarSdk.Operation.createAccount({
